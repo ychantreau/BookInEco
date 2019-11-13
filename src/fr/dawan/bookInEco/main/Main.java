@@ -1,11 +1,11 @@
-package fr.dawan.bookineco.main;
+package fr.dawan.bookInEco.main;
 
 import fr.dawan.bookInEco.bean.Commande;
 import fr.dawan.bookInEco.bean.FicheLivre;
 import fr.dawan.bookInEco.bean.Panier;
 import fr.dawan.bookInEco.bean.Preference;
 import fr.dawan.bookInEco.bean.Utilisateur;
-import fr.dawan.bookineco.dao.Jdbc;
+import fr.dawan.bookInEco.dao.Jdbc;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
