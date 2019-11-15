@@ -1,4 +1,4 @@
-package fr.dawan.bookInEco.bean;
+package src.fr.dawan.bookInEco.bean;
 
 import java.util.List;
 
@@ -15,12 +15,10 @@ public class Commande {
 	
 	
 	public Commande() {
-		super();
 	}
 
 
 	public Commande(int id, int idUtilisateur, List<FicheLivre> listeFicheLivre, int prixTotalCommande) {
-		super();
 		this.id = id;
 		this.idUtilisateur = idUtilisateur;
 		this.listeFicheLivre = listeFicheLivre;

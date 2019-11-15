@@ -3,16 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.dawan.bookInEco.dao;
+package src.fr.dawan.bookInEco.dao;
 
-import fr.dawan.bookInEco.bean.Commande;
-import fr.dawan.bookInEco.bean.FicheLivre;
-import fr.dawan.bookInEco.bean.Panier;
-import fr.dawan.bookInEco.bean.Preference;
-import fr.dawan.bookInEco.bean.Utilisateur;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
+import src.fr.dawan.bookInEco.bean.Commande;
+import src.fr.dawan.bookInEco.bean.FicheLivre;
+import src.fr.dawan.bookInEco.bean.Panier;
+import src.fr.dawan.bookInEco.bean.Preference;
+import src.fr.dawan.bookInEco.bean.Utilisateur;
 
 /**
  *

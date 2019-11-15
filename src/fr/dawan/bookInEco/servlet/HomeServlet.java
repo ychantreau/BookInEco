@@ -1,20 +1,16 @@
-package fr.dawan.bookInEco.servlet;
+package src.fr.dawan.bookInEco.servlet;
 
-import fr.dawan.bookInEco.bean.Commande;
-import fr.dawan.bookInEco.bean.FicheLivre;
-import fr.dawan.bookInEco.bean.Panier;
-import fr.dawan.bookInEco.bean.Preference;
-import fr.dawan.bookInEco.bean.Utilisateur;
-import fr.dawan.bookInEco.dao.FicheLivreDao;
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import src.fr.dawan.bookInEco.bean.FicheLivre;
+import src.fr.dawan.bookInEco.dao.FicheLivreDao;
 
 /**
  * Servlet implementation class HomeServlet

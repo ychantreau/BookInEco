@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
         <title>Accueil</title>
     </head>
     <body>
@@ -22,8 +22,9 @@
                 </tr>
 
             </c:forEach>
+             <p>Autre test <%= request.getAttribute("test")%></p>
         </table>
         <p>${test}</p>
-        <p>Autre test <%= request.getAttribute("test")%></p>
+       
     </body>
 </html>
