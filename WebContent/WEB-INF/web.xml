@@ -7,16 +7,5 @@
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
-	
-	<servlet>
-		<servlet-name>HomeServlet</servlet-name>
-		<servlet-class>fr.dawan.bookInEco.servlet.HomeServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>HomeServlet</servlet-name>
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
-
 
 </web-app>
