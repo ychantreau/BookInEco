@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 21 nov. 2019 à 13:24
+-- Généré le :  jeu. 21 nov. 2019 à 13:34
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.14
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `bookinecobdd`
 --
+CREATE DATABASE IF NOT EXISTS `bookinecobdd` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `bookinecobdd`;
 
 -- --------------------------------------------------------
 
