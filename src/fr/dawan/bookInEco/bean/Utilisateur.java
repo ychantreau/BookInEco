@@ -1,5 +1,6 @@
 package fr.dawan.bookInEco.bean;
 
+import java.util.Date;
 import java.util.List;
 
 public class Utilisateur {
@@ -7,8 +8,10 @@ public class Utilisateur {
 	private int id;
 	private String prenom;
 	private String nom;
+	private String email;
 	private String pseudo;
 	private String motDePasse;
+	private Date date;
 	private String adresse;
 	private int nbrePoints;
 	private List<Preference> preferenceLitteraire;
@@ -17,6 +20,7 @@ public class Utilisateur {
 	private Panier panier;
 	//Entier qui correspond aux droits sur l'application ( admin, utilisateur ...)
 	private int role;
+	private Boolean validation;
 
 	public int getRole() {
 		return role;
@@ -24,6 +28,14 @@ public class Utilisateur {
 
 	public void setRole(int role) {
 		this.role = role;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	public void obtenirLivre(FicheLivre fiche) {
@@ -53,15 +65,17 @@ public class Utilisateur {
 		super();
 	}
 
-	public Utilisateur(int id, String prenom, String nom, String pseudo, String motDePasse, String adresse,
+	public Utilisateur(int id, String prenom, String nom, String email, String pseudo, String motDePasse, Date date, String adresse,
 			int nbrePoints, List<Preference> preferenceLitteraire, String pathPhoto, List<FicheLivre> listeFicheLivre,
-			Panier panier, int role) {
+			Panier panier, int role, Boolean validation) {
 		super();
 		this.id = id;
 		this.prenom = prenom;
 		this.nom = nom;
+		this.email = email;
 		this.pseudo = pseudo;
 		this.motDePasse = motDePasse;
+		this.date = date;
 		this.adresse = adresse;
 		this.nbrePoints = nbrePoints;
 		this.preferenceLitteraire = preferenceLitteraire;
@@ -69,14 +83,15 @@ public class Utilisateur {
 		this.listeFicheLivre = listeFicheLivre;
 		this.panier = panier;
 		this.role = role;
+		this.validation = validation;
 	}
 
 	@Override
 	public String toString() {
-		return "Utilisateur [id=" + id + ", prenom=" + prenom + ", nom=" + nom + ", pseudo=" + pseudo + ", motDePasse="
-				+ motDePasse + ", adresse=" + adresse + ", nbrePoints=" + nbrePoints + ", preferenceLitteraire="
+		return "Utilisateur [id=" + id + ", prenom=" + prenom + ", nom=" + nom + ", email=" + email + ", pseudo=" + pseudo + ", motDePasse="
+				+ motDePasse + ", date=" + date + ", adresse=" + adresse + ", nbrePoints=" + nbrePoints + ", preferenceLitteraire="
 				+ preferenceLitteraire + ", pathPhoto=" + pathPhoto + ", listeFicheLivre=" + listeFicheLivre
-				+ ", panier=" + panier + ", role=" + role + "]";
+				+ ", panier=" + panier + ", role=" + role + ", validation=" + validation +"]";
 	}
 
 	public int getId() {
@@ -101,6 +116,16 @@ public class Utilisateur {
 
 	public void setNom(String nom) {
 		this.nom = nom;
+	}
+	
+	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPseudo() {
@@ -166,5 +191,13 @@ public class Utilisateur {
 	public void setPanier(Panier panier) {
 		this.panier = panier;
 	}
+	
+	public Boolean getValidation() {
+        return validation;
+    }
+
+    public void setValidation(Boolean validation) {
+        this.validation = validation;
+    }
 
 }
