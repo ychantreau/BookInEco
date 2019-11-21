@@ -2,7 +2,7 @@ package fr.dawan.bookInEco.main;
 
 import fr.dawan.bookInEco.bean.Commande;
 import fr.dawan.bookInEco.bean.FicheLivre;
-import fr.dawan.bookInEco.bean.Panier;
+import fr.dawan.bookInEco.bean.PanierCommande;
 import fr.dawan.bookInEco.bean.Preference;
 import fr.dawan.bookInEco.bean.Utilisateur;
 import fr.dawan.bookInEco.dao.Jdbc;
@@ -16,7 +16,7 @@ public class Main {
 		ArrayList<Preference> listPref = new ArrayList<>();
 		ArrayList<FicheLivre> listeFicheLivre = new ArrayList<>();
 		ArrayList<Commande> listeCommande = new ArrayList<>();
-		Panier panier = new Panier(1, 1, listeCommande, 0);
+		PanierCommande panier = new PanierCommande(1, 1, listeCommande, 0);
 		Utilisateur util = new Utilisateur(1, "yohan", "chantreau", "yopsuedo", "yomdp", "une adresse", 30, listPref,
 				"le chemin de la photo", listeFicheLivre, panier,1);
 

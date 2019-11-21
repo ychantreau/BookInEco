@@ -14,11 +14,9 @@ public class Utilisateur {
 	private String motDePasse;
 	private String avatar;
 	private String adresse;
-	
-	
 	private String pathPhoto;
 	private List<FicheLivre> listeFicheLivre;
-	private Panier panier;
+	private PanierCommande panier;
 	//Entier qui correspond aux droits sur l'application ( admin, utilisateur ...)
 	private int role;
 
@@ -59,7 +57,7 @@ public class Utilisateur {
 
 	public Utilisateur(int id, String prenom, String nom, String pseudo, String motDePasse, String adresse,
 			int nbrePoints, List<Preference> preferenceLitteraire, String pathPhoto, List<FicheLivre> listeFicheLivre,
-			Panier panier, int role) {
+			PanierCommande panier, int role) {
 		super();
 		this.id = id;
 		this.prenom = prenom;
@@ -163,12 +161,35 @@ public class Utilisateur {
 		this.listeFicheLivre = listeFicheLivre;
 	}
 
-	public Panier getPanier() {
+	public PanierCommande getPanier() {
 		return panier;
 	}
 
-	public void setPanier(Panier panier) {
+	public void setPanier(PanierCommande panier) {
 		this.panier = panier;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getAvatar() {
+		return avatar;
+	}
+
+	public void setAvatar(String avatar) {
+		this.avatar = avatar;
+	}
+	
+	
+	public void modififierProfil() {
+		// Je récupère l'utilisateur connecté 
+		
+		// J
 	}
 
 }
