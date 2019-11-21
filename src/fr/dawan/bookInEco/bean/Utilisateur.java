@@ -8,10 +8,14 @@ public class Utilisateur {
 	private String prenom;
 	private String nom;
 	private String pseudo;
-	private String motDePasse;
-	private String adresse;
 	private int nbrePoints;
 	private List<Preference> preferenceLitteraire;
+	private String email;
+	private String motDePasse;
+	private String avatar;
+	private String adresse;
+	
+	
 	private String pathPhoto;
 	private List<FicheLivre> listeFicheLivre;
 	private Panier panier;
