@@ -6,11 +6,14 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import fr.dawan.bookInEco.bean.Utilisateur;
 
 /**
  * Servlet implementation class HomeServlet
  */
-
+@WebServlet("/")
 public class HomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -27,6 +30,10 @@ public class HomeServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		HttpSession session =  request.getSession();
+		Utilisateur util = new Utilisateur();
+		util.setPseudo("Yohan");
+		session.setAttribute("util", util);
 		request.getRequestDispatcher("WEB-INF/views/index.jsp").forward(request, response);
 	}
 

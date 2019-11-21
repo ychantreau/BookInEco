@@ -3,10 +3,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<base
+	href="<%=request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+					+ request.getContextPath() + "/"%>" />
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Home</title>
 </head>
 <body>
-testsamson
+<a href="ajouterLivre">Ajout d'un livre</a>
 </body>
 </html>
