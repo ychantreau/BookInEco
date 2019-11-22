@@ -1,4 +1,4 @@
-package src.fr.dawan.bookInEco.bean;
+package fr.dawan.bookInEco.bean;
 
 import java.time.LocalDateTime;
 

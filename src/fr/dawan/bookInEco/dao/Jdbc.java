@@ -1,4 +1,4 @@
-package src.fr.dawan.bookInEco.dao;
+package fr.dawan.bookInEco.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package src.fr.dawan.bookInEco.servlet;
+package fr.dawan.bookInEco.servlet;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import src.fr.dawan.bookInEco.bean.FicheLivre;
-import src.fr.dawan.bookInEco.dao.FicheLivreDao;
+import fr.dawan.bookInEco.bean.FicheLivre;
+import fr.dawan.bookInEco.dao.FicheLivreDao;
 
 /**
  * Servlet implementation class HomeServlet
@@ -24,6 +24,7 @@ public class HomeServlet extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
+    	
         FicheLivreDao.initialise();
         List<FicheLivre> liste = FicheLivreDao.getAllLivre();
         request.setAttribute("livres",liste);
